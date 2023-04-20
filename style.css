@@ -25,7 +25,7 @@ body {
   .information {
     text-align: center;
   }
-  
+
 }
 
 .main {
@@ -49,11 +49,13 @@ ul {
   padding: 0px;
 }
 
-li,h3 {
+li,
+h3 {
   list-style: none;
 }
 
-input,button {
+input,
+button {
   outline: none;
 }
 
@@ -72,7 +74,8 @@ button:hover {
 }
 
 /* Heading */
-.todo-heading,.new-task-label {
+.todo-heading,
+.new-task-label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
