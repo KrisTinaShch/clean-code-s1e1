@@ -16,7 +16,7 @@ body {
   width: 100%;
 }
 
-.information .more-inf {
+.information .information__link {
   font-family: fantasy, cursive;
 }
 
@@ -74,8 +74,8 @@ button:hover {
 }
 
 /* Heading */
-.todo-heading,
-.new-task-label {
+.todo__heading,
+.new-task__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,7 +85,7 @@ button:hover {
   text-transform: uppercase;
 }
 
-.task-text {
+.task-wrapper__task-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,12 +98,12 @@ button:hover {
   color: #888;
 }
 
-.task-text:focus {
+.task-wrapper__task-text:focus {
   color: #333;
 }
 
 /* New Task */
-.new-task-label {
+.new-task__label {
   display: block;
   margin: 0 0 20px;
 }
@@ -127,7 +127,7 @@ li>* {
   vertical-align: middle;
 }
 
-.task-wrapper>.check-task {
+.task-wrapper>.task__check {
   margin: 0 10px;
 }
 
@@ -138,17 +138,17 @@ li>* {
   width: 226px;
 }
 
-.task-wrapper>.task-text {
+.task-wrapper>.task-wrapper__task-text {
   width: 226px
 }
 
-.delete-button img {
+.task__delete-button img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-button img:hover {
+.task__delete-button img:hover {
   transform: rotateZ(0);
 }
 
@@ -163,7 +163,7 @@ ul li input[type=text] {
   display: none
 }
 
-.edit-mode .task-text {
+.edit-mode .task-wrapper__task-text {
   display: inline-block;
   width: 224px
 }
